@@ -17,25 +17,25 @@ try {
 }
 
 // Movie data
-$id = 24;
-$title = "Pirates of the Caribbean: The Curse of the Black Pearl";
-$release_date = "2003-04-21";
-$runtime = 143;
-$genre = "Adventure";
-$company = "bllb";
-$country = "America";
+// $id = 24;
+// $title = "Pirates of the Caribbean: The Curse of the Black Pearl";
+// $release_date = "2003-04-21";
+// $runtime = 143;
+// $genre = "Adventure";
+// $company = "bllb";
+// $country = "America";
 
-$sql = "INSERT INTO Movie (id, title, release_date, runtime, genre, company, country) VALUES (?, ?, ?, ?, ?, ?, ?)";
-$stmt = $pdo->prepare($sql);
+// $sql = "INSERT INTO Movie (id, title, release_date, runtime, genre, company, country) VALUES (?, ?, ?, ?, ?, ?, ?)";
+// $stmt = $pdo->prepare($sql);
 
-try {
-    $status = $stmt->execute([$id, $title, $release_date, $runtime, $genre, $company, $country]);
-    if ($status) {
-        echo "Movie has been inserted";
-    } else {
-        echo "Movie has not been inserted";
-    }
-} catch (PDOException $e) {
-    echo "Insert failed: " . $e->getMessage();
-}
+// try {
+//     $status = $stmt->execute([$id, $title, $release_date, $runtime, $genre, $company, $country]);
+//     if ($status) {
+//         echo "Movie has been inserted";
+//     } else {
+//         echo "Movie has not been inserted";
+//     }
+// } catch (PDOException $e) {
+//     echo "Insert failed: " . $e->getMessage();
+// }
 ?>
